@@ -1,0 +1,157 @@
+/* General styling for body and heading */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff7e6; /* Cream background */
+  color: #333; /* Dark grey text */
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Brush Script MT', cursive;
+  color: #800000; /* Maroon red heading */
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em; /* Larger heading size */
+}
+
+/* Styling for search container */
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+#search-input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  flex-grow: 1;
+  font-size: 1em;
+}
+
+#search-button {
+  background-color: #800000; /* Maroon button */
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+  font-size: 1em;
+}
+
+#search-button:hover {
+  background-color: #660000; /* Darker maroon on hover */
+}
+
+.add-button {
+  background-color: transparent;
+  color: #800000;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px; /* Add space between search and add buttons */
+  border-radius: 5px;
+  transition: color 0.2s ease;
+  font-size: 1.2em;
+  display: inline-block;
+}
+
+.add-button:hover {
+  color: #660000;
+}
+
+.add-button i {
+  font-size: 1.2em;
+}
+
+/* Styling for table with rounded edges */
+table {
+  width: 100%;
+  max-width: 600px;
+  border-collapse: separate; /* Use 'separate' for border-radius effect */
+  background-color: #fff; /* White table */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 30px;
+  border-radius: 10px; /* Rounded corners for the table */
+  overflow: hidden; /* Clip content to rounded corners */
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.9em; /* Adjust font size for table cells */
+}
+
+/* Rounded corners for first and last row */
+th:first-child {
+  border-top-left-radius: 10px; /* Round top-left corner */
+}
+th:last-child {
+  border-top-right-radius: 10px; /* Round top-right corner */
+}
+tr:last-child td:first-child {
+  border-bottom-left-radius: 10px; /* Round bottom-left corner */
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 10px; /* Round bottom-right corner */
+}
+
+th {
+  background-color: #fff;
+  font-weight: bold;
+}
+
+/* Container for action buttons to ensure vertical alignment */
+.action-buttons {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center;
+  gap: 5px; /* Space between buttons */
+}
+
+/* Styling for Read, Edit, and Delete buttons */
+.read-button, .edit-button, .delete-button {
+  background-color: transparent;
+  color: #800000;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: color 0.2s ease;
+  font-size: 1.2em;
+  display: inline-flex;
+  align-items: center;
+}
+
+.read-button:hover, .edit-button:hover, .delete-button:hover {
+  color: #660000;
+}
+
+.read-button i, .edit-button i, .delete-button i {
+  font-size: 1.2em;
+}
+
+/* Zebra stripes for table rows */
+table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2; /* Light grey zebra stripe */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 10px 8px;
+  }
+}
